@@ -4,7 +4,7 @@ var cmdl = cmd.length; //명령어 앞 길이
 var wide = "\u200b".repeat(1000); //전체보기
 function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
   var hash = new java.lang.String(imageDB.getProfileImage()).hashCode();
-  if(msg == "Shash"){
+  if(msg == cmd+"hash"){
     replier.reply(hash);
   }
   if(msg.startsWith(cmd+"py ")){
